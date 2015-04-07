@@ -17,7 +17,7 @@ rl.on('line', function(line) {
   if (matches) {
     if (matches[1] === 'Version') {
       fields = [];
-      directives = {'Version': matches[2]};
+      directives = {};
     } else if (matches[1] === 'Fields') {
       fields = matches[2].split(/\s+/).map(function(name) {
         return name !== '-' ? name : null;
