@@ -1,7 +1,7 @@
 Parse stdin as [W3C extended log file format](http://www.w3.org/TR/WD-logfile.html) and print out json lines.
 
 * Url decode each field value
-* The field `cs-uri-query` is turned it's own nested json object
+* The field `cs-uri-query` is turned into it's own nested json object
 * Include the preceding log file directives in every entry (because we can)
 * Include a `raw` field with the original log line (also because we can)
 
